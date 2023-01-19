@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-
+![solution-screenshot](https://user-images.githubusercontent.com/89041260/213545469-dc715d83-a7ec-45f4-8bf2-cafb40b74b8d.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [fylapa](https://fylapa.netlify.app/)
 
 ## My process
 
