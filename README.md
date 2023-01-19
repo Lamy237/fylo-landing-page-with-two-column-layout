@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Fylo landing page with two column layout using SCSS](https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-WNfJ_QcnKe)
 - Live Site URL: [fylapa](https://fylapa.netlify.app/)
 
 ## My process
