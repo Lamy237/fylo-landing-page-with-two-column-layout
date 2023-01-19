@@ -3,7 +3,7 @@
 .container {
 
     &__main-content {
-        background-color: var(--LIGHT-GRAYISH-BLUE);
+        background-color: var(--GHOST-WHITE);
         padding: 0 a.rem(15) a.rem(50);
 
         display: grid;
@@ -103,7 +103,7 @@
 
     @include a.breakpoint(large) {
         &__main-content {
-            padding: a.rem(32) a.rem(60) a.rem(80);
+            padding: a.rem(32) a.rem(60) a.rem(100);
 
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
@@ -112,7 +112,7 @@
 
         &__content-body {
             order: -1;
-            gap: a.rem(32);
+            gap: a.rem(40);
         }
 
         &__advert {
@@ -142,7 +142,7 @@
 
         &__registration {
             text-align: left;
-            padding: a.rem(70) a.rem(60);
+            padding: a.rem(80) a.rem(60);
 
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;

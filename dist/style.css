@@ -9,6 +9,7 @@
   --CRIMSON: hsl(348, 83%, 47%);
   --DESATURATED-BLUE: hsl(238, 22%, 44%);
   --FLAT-BLACK: hsla(0, 0%, 0%, 0.6);
+  --GHOST-WHITE: hsl(230, 75%, 98%);
   --LIGHT-GRAY: hsl(0, 0%, 75%);
   --LIGHT-GRAYISH-BLUE: hsl(240, 75%, 98%);
   --MODERATE-CYAN: hsl(170, 45%, 43%);
@@ -181,7 +182,7 @@ input:focus-within {
   padding: 1.25rem 0.75rem 0.75rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .header__nav-line {
   display: flex;
@@ -248,7 +249,11 @@ input:focus-within {
   }
   .header__intro {
     order: -1;
+    align-items: start;
     text-align: left;
+  }
+  .header__p {
+    width: 85%;
   }
   .header__form {
     display: grid;
@@ -259,7 +264,7 @@ input:focus-within {
 }
 
 .container__main-content {
-  background-color: var(--LIGHT-GRAYISH-BLUE);
+  background-color: var(--GHOST-WHITE);
   padding: 0 0.9375rem 3.125rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -339,14 +344,14 @@ input:focus-within {
 }
 @media screen and (min-width: 56.25em) {
   .container__main-content {
-    padding: 2rem 3.75rem 5rem;
+    padding: 2rem 3.75rem 6.25rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 6.25rem;
   }
   .container__content-body {
     order: -1;
-    gap: 2rem;
+    gap: 2.5rem;
   }
   .container__advert {
     align-items: start;
@@ -369,7 +374,7 @@ input:focus-within {
   }
   .container__registration {
     text-align: left;
-    padding: 4.375rem 3.75rem;
+    padding: 5rem 3.75rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
