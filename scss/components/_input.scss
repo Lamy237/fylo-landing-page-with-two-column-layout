@@ -1,0 +1,13 @@
+@use '../abstracts' as a;
+
+input {
+    width: 100%;
+    padding: a.rem(12) a.rem(16);
+    border: a.rem(1) solid var(--VERY-DARK-BLUE);
+    border-radius: a.rem(5);
+    outline: none;
+
+    &:focus-within {
+        border: a.rem(1) solid var(--VIOLET);
+    }
+}

@@ -1,0 +1,178 @@
+@use '../abstracts' as a;
+
+.container {
+
+    &__main-content {
+        background-color: var(--LIGHT-GRAYISH-BLUE);
+        padding: 0 a.rem(15) a.rem(50);
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: a.rem(24);
+    }
+
+    &__content-body {
+        display: flex;
+        flex-direction: column;
+        gap: a.rem(24);
+    }
+
+    &__advert {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: a.rem(24);
+    }
+
+    &__h2 {
+        text-align: center;
+        color: var(--VERY-DARK-BLUE);
+
+        &--white {
+            color: var(--WHITE);
+        }
+    }
+
+    &__p {
+        color: var(--FLAT-BLACK);
+
+        &--white {
+            color: var(--WHITE);
+        }
+    }
+
+    &__link {
+        border-bottom: 1px solid var(--MODERATE-CYAN);
+        color: var(--MODERATE-CYAN);
+
+        display: flex;
+        align-items: center;
+        gap: a.rem(8);
+
+        &:hover {
+            filter: brightness(130%);
+        }
+
+        img {
+            display: inline-block;
+        }
+    }
+
+    &__registration {
+        padding: a.rem(40) a.rem(22);
+        background-color: var(--DESATURATED-BLUE);
+        text-align: center;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: a.rem(24);
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: a.rem(24);
+        }
+    }
+
+    &__form {
+        margin-inline: auto;
+
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: a.rem(16);
+
+        input {
+            border-color: transparent;
+
+            &:focus-within {
+                border-color: var(--VIOLET);
+            }
+        }
+    }
+
+    @include a.breakpoint(medium) {
+        &__background-curve {
+            content: url('../images/bg-curve-desktop.svg');
+        }
+    }
+
+    @include a.breakpoint(large) {
+        &__main-content {
+            padding: a.rem(32) a.rem(60) a.rem(80);
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            gap: a.rem(100);
+        }
+
+        &__content-body {
+            order: -1;
+            gap: a.rem(32);
+        }
+
+        &__advert {
+            align-items: start;
+
+            h2 {
+                margin-bottom: 0.25em;
+            }
+        }
+
+        &__h2 {
+            text-align: left;
+        }
+
+        &__p {
+            color: var(--VERY-DARK-BLUE);
+
+            &--white {
+                color: var(--WHITE);
+            }
+        }
+
+        &__link {
+            width: 45%;
+            margin: 0;
+        }
+
+        &__registration {
+            text-align: left;
+            padding: a.rem(70) a.rem(60);
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+
+        &__form {
+            width: 100%;
+            align-items: start;
+
+            button {
+                width: 55%;
+            }
+        }
+    }
+
+    @media screen and (min-width: a.em(982)) {
+        &__link {
+            width: 30%;
+        }
+    }
+
+    @media screen and (min-width: a.em(1100)) {
+        &__registration {
+            gap: a.rem(150);
+        }
+
+        &__form {
+            button {
+                width: 40%;
+            }
+        }
+    }
+}

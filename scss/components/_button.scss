@@ -1,0 +1,16 @@
+@use '../abstracts' as a;
+
+button {
+    width: 100%;
+    padding: a.rem(12) a.rem(16);
+    background-color: var(--BRIGHT-BLUE);
+    color: var(--LIGHT-GRAYISH-BLUE);
+    border: none;
+    border-radius: a.rem(5);
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    filter: brightness(130%);
+}

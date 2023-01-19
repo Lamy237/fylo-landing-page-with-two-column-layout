@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__nav-line">
+      <img src="images/logo.svg" alt="" aria-hidden="true">
+      <nav class="header__nav">
+        <a href="#">Features</a>
+        <a href="#">Team</a>
+        <a href="#">Sign In</a>
+      </nav>
+    </div>
+    <section class="header__hero">
+      <img src="images/illustration-1.svg" alt="" aria-hidden="true">
+      <div class="header__intro">
+        <h1 class="header__h1">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="header__p">
+          Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.
+        </p>
+        <form class="header__form form">
+          <input class="form__input" type="email" name="email" id="email-header" placeholder="Enter your email..."
+            required>
+          <button class="form__button">Get Started</button>
+        </form>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <img class="container__background-curve" src="images/bg-curve-mobile.svg" alt="" aria-hidden="true">
+    <div class="container__main-content">
+      <img src="images/illustration-2.svg" alt="" aria-hidden="true">
+      <div class="container__content-body">
+        <section class="container__advert">
+          <h2 class="container__h2">Stay productive, wherever you are</h2>
+          <p class="container__p">
+            Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.
+          </p>
+          <p class="container__p">
+            Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!
+          </p>
+          <a href="#" class="container__link nowrap">
+            <span>See how Fylo works</span>
+            <img src="images/icon-arrow.svg" alt="" aria-hidden="true">
+          </a>
+        </section>
+        <section class="container__testimonial testimonial">
+          <img class="testimonial__quote" src="images/icon-quotes.svg" alt="" aria-hidden="true">
+          <p class="testimonial__p">
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <figure class="testimonial__figure">
+            <img class="testimonial__avatar" src="images/avatar-testimonial.jpg" alt="Kyle Burton" width="125"
+              height="125">
+            <figcaption class="testimonial__figcaption">
+              <h3 class="testimonial__name"><span class="nowrap">Kyle Burton</span></h3>
+              <p class="testimonial__occupation"><span class="nowrap">Founder & CEO, Huddle</span></p>
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+    </div>
+    <section class="container__registration">
+      <div>
+        <h2 class="container__h2 container__h2--white">Get early access today</h2>
+        <p class="container__p container__p--white">
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
+      <form class="container__form form">
+        <input class="form__input" type="email" name="email" id="email-main" placeholder="email@example.com" required>
+        <button class="form__button">Get Started For Free</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img class="footer__logo-img" src="images/logo.svg" alt="" aria-hidden="true">
+    <div class="footer__items">
+      <ul class="footer__ul footer__ul--contact">
+        <li>
+          <img src="images/icon-phone.svg" alt="" aria-hidden="true">
+          <a href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
+        </li>
+        <li>
+          <img src="images/icon-email.svg" alt="" aria-hidden="true">
+          <a href="mailto:example@fylo.com">example@fylo.com</a>
+        </li>
+      </ul>
+      <ul class="footer__ul">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <ul class="footer__ul">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+      <div class="footer__social">
+        <i class="footer__icon fa-brands fa-facebook-f"></i>
+        <i class="footer__icon fa-brands fa-twitter"></i>
+        <i class="footer__icon fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

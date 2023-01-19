@@ -1,0 +1,105 @@
+@use '../abstracts' as a;
+
+.footer {
+    padding: a.rem(60) a.rem(30);
+    background-color: var(--VERY-DARK-BLUE);
+
+    display: flex;
+    flex-direction: column;
+    gap: a.rem(32);
+
+    &__logo-img {
+        width: 60%;
+        filter: brightness(0) invert(100%);
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: a.rem(24);
+    }
+
+    &__ul {
+        list-style-type: none;
+        line-height: 2;
+
+        a,
+        a:visited {
+            color: var(--WHITE);
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--BRIGHT-BLUE);
+        }
+
+        &--contact {
+            li {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                gap: a.rem(16);
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: a.rem(16);
+    }
+
+    &__icon {
+        width: a.rem(40);
+        height: a.rem(40);
+        border: a.rem(1) solid var(--WHITE);
+        border-radius: 50%;
+        color: var(--WHITE);
+        cursor: pointer;
+
+        display: grid;
+        place-content: center;
+
+        &:hover {
+            &:first-child {
+                color: var(--BLUE);
+                border-color: var(--BLUE);
+            }
+
+            &:nth-child(2) {
+                color: var(--BRIGHT-BLUE);
+                border-color: var(--BRIGHT-BLUE);
+            }
+
+            &:last-child {
+                color: var(--CRIMSON);
+                border-color: var(--CRIMSON);
+            }
+        }
+    }
+
+    @include a.breakpoint(medium) {
+        &__logo-img {
+            width: 35%;
+        }
+    }
+
+    @include a.breakpoint(large) {
+        padding: a.rem(80) a.rem(60);
+
+        &__logo-img {
+            width: 15%;
+        }
+
+        &__items {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__ul {
+            line-height: 2.75;
+        }
+    }
+}

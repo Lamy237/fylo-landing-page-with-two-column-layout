@@ -1,0 +1,55 @@
+@use '../abstracts' as a;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: var(--BODY-FF);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--HEADERS-FF);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(a.rem(28), a.rem(16) + 2vw, a.rem(40));
+}
+
+h2 {
+    font-size: clamp(a.rem(20), a.rem(14) + 1.5vw, a.rem(32));
+}
+
+nav {
+    font-family: var(--HEADERS-FF);
+    font-weight: 400;
+}
+
+p {
+    font-size: a.rem(16);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+input,
+button {
+    font: inherit;
+    font-family: var(--HEADERS-FF);
+}
+
+button {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
