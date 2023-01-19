@@ -263,6 +263,9 @@ input:focus-within {
   }
 }
 
+.container__background-curve {
+  width: 100%;
+}
 .container__main-content {
   background-color: var(--GHOST-WHITE);
   padding: 0 0.9375rem 3.125rem;

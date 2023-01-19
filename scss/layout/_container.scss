@@ -2,6 +2,10 @@
 
 .container {
 
+    &__background-curve {
+        width: 100%;
+    }
+
     &__main-content {
         background-color: var(--GHOST-WHITE);
         padding: 0 a.rem(15) a.rem(50);
